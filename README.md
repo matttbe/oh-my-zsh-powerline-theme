@@ -8,6 +8,19 @@ Preview
 
 ![Preview](http://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme/raw/master/preview.png)
 
+Quick installation
+------------------
+
+```
+curl -L http://install.ohmyz.sh | sh
+wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
+mkdir -p ~/.fonts/ && mv PowerlineSymbols.otf ~/.fonts/
+fc-cache -vf ~/.fonts
+mkdir -p ~/.config/fontconfig/conf.d/ && mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
+wget https://raw.githubusercontent.com/matttbe/oh-my-zsh-powerline-theme/master/powerline.zsh-theme -O ~/.oh-my-zsh/themes/powerline.zsh-theme
+wget https://raw.githubusercontent.com/matttbe/oh-my-zsh-powerline-theme/master/zshrc -O ~/.zshrc
+```
+
 Set Up
 ------
 
