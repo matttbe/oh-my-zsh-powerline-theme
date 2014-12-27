@@ -116,14 +116,14 @@ POWERLINE_DETECT_SSH="true"
 
 Also you can change the icons of GIT info, default values are:
 ```
-POWERLINE_GIT_CLEAN="✔"
-POWERLINE_GIT_DIRTY="✘"
-POWERLINE_GIT_ADDED="%F{green}✚%F{black}"
-POWERLINE_GIT_MODIFIED="%F{blue}✹%F{black}"
-POWERLINE_GIT_DELETED="%F{red}✖%F{black}"
-POWERLINE_GIT_UNTRACKED="%F{yellow}✭%F{black}"
-POWERLINE_GIT_RENAMED="➜"
-POWERLINE_GIT_UNMERGED="═"
+POWERLINE_GIT_CLEAN="%F{green}✔%F{white}"
+POWERLINE_GIT_DIRTY="%F{red}✘%F{white}"
+POWERLINE_GIT_ADDED="%F{green}✚%F{white}"
+POWERLINE_GIT_MODIFIED="%F{cyan}✹%F{white}"
+POWERLINE_GIT_DELETED="%F{red}✖%F{white}"
+POWERLINE_GIT_UNTRACKED="%F{yellow}✭%F{white}"
+POWERLINE_GIT_RENAMED="%F{cyan}➜%F{white}"
+POWERLINE_GIT_UNMERGED="%F{cyan}═%F{white}"
 ```
 
 Requirements
@@ -132,6 +132,17 @@ Requirements
 * Vim Powerline patched font: Download your favorite one on [Lokaltog/powerline-font](https://github.com/Lokaltog/powerline-fonts).
 * Z shell (zsh): See [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) for more info.
 * Make sure terminal is using 256-colors mode with `export TERM="xterm-256color"`.
+
+Fonts
+-----
+To easily install all powerline fonts, simply launch all theses commands ([src](http://askubuntu.com/a/283909)):
+
+```
+wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
+mkdir -p ~/.fonts/ && mv PowerlineSymbols.otf ~/.fonts/
+fc-cache -vf ~/.fonts
+mkdir -p ~/.config/fontconfig/conf.d/ && mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
+```
 
 Contribute
 ----------
