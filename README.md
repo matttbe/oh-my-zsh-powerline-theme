@@ -11,6 +11,8 @@ Preview
 Quick installation
 ------------------
 
+You can just launch these commands and you'll get a zsh shell which will looks like the preview here above.
+
 * Oh-My-ZSH:
 
 ```
@@ -33,8 +35,12 @@ wget https://raw.githubusercontent.com/matttbe/oh-my-zsh-powerline-theme/master/
 wget https://raw.githubusercontent.com/matttbe/oh-my-zsh-powerline-theme/master/zshrc -O ~/.zshrc
 ```
 
-Set Up
-------
+And voilà!
+
+Set Up (manually)
+-----------------
+
+If you want to set up it manually (no need to do that if you already launch all commands of the previous section), you can follow these steps:
 
 1. Clone the repository.
 
