@@ -81,6 +81,10 @@ bindkey -e
 # do not share history between consoles
 unsetopt share_history
 
+alias mv='nocorrect mv'       # no spelling correction on mv
+alias cp='nocorrect cp'       # no spelling correction on cp
+alias mkdir='nocorrect mkdir' # no spelling correction on mkdir
+
 zstyle ':completion:*:killall:*' command 'ps -u $USER -o cmd'
 zstyle ':completion:*' completer _expand _complete _correct _approximate
 zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
