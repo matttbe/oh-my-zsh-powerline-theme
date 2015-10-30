@@ -74,10 +74,12 @@ HISTFILE=~/.zsh_history
 HISTSIZE=7500
 SAVEHIST=$HISTSIZE
 HISTFILESIZE=$HISTSIZE
-# affichage de tout l'historique
+# Display all history
 alias history='history -d 1'
 setopt extendedglob
 bindkey -e
+# do not share history between consoles
+unsetopt share_history
 
 zstyle ':completion:*:killall:*' command 'ps -u $USER -o cmd'
 zstyle ':completion:*' completer _expand _complete _correct _approximate
